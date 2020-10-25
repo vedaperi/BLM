@@ -161,10 +161,30 @@
           <p>Suggest additional locations to add using this link. Last updated 10/22/20.</p>
         </div>
         <!-- End Title -->
+<!--
+        <div class="device-wrapper rounded text-center">
+          <iframe class="min-h-450rem rounded text-center" src="https://www.google.com/maps/d/u/0/embed?mid=1TI1247y5QjH61WATdwO8evyJ9lVGSh7Y" style="width: 100%;" height="480"></iframe>
+        </div> -->
 
-        <div class="device-wrapper">
-          <div class="min-h-450rem rounded text-center"><iframe class="min-h-450rem rounded text-center" src="https://www.google.com/maps/d/u/0/embed?mid=1TI1247y5QjH61WATdwO8evyJ9lVGSh7Y" style="width: 100%;" height="480"></iframe></div>  
-        </div>
+        <style>
+          .google-maps {
+              position: relative;
+              padding-bottom: 75%; // This is the aspect ratio
+              height: 0;
+              overflow: hidden;
+          }
+          .google-maps iframe {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100% !important;
+              height: 100% !important;
+          }
+      </style>
+
+      <div class="google-maps rounded">
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1TI1247y5QjH61WATdwO8evyJ9lVGSh7Y" width="940" height="300" frameborder="0" style="border:0"></iframe>
+      </div>
 
       </div>
         <!-- End Tab Content -->
